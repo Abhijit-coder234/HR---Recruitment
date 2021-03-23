@@ -44,7 +44,7 @@
           </div>
        <div>
         <div class="tab"  style="color:wheat;">
-            <button class="tablinks"  onclick="openCity(event, 'London')">Role 1</button>
+            <button class="tablinks"  id="mybutton" onclick="openCity(event, 'London')">Role 1</button>
             <button class="tablinks" onclick="openCity(event, 'Paris')">Role 2</button>
             <button class="tablinks" onclick="openCity(event, 'Tokyo')">Role 3</button>
           </div>
@@ -139,6 +139,9 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
           }
+
+          const button = document.querySelector('#mybutton');
+          button.click();
           </script>
        </div>
        <div id="d1">
